@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3413748-DA52-6625-3D6B-AF0B660ACE51" name="Dodavatel">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:55:02 UTC</createdTime>
+<generatorID>8404C4F4-42AE-FC2B-95E0-69BE7FF41085</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Dodavatel" id="C7D1B03B-EB8D-62B7-EB04-3288BDD7242B">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:55:02 UTC</createdTime>
+<generatorID>7CAE8A61-39EE-442D-66F0-54F1EA886A29</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Jmeno" id="7EFA0B76-65E2-7D8A-D254-E79C00A37D37">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:55:02 UTC</createdTime>
+<generatorID>FDEDC1C4-E089-36C3-C8BB-161C5639DC9A</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Adresa" id="745A8D63-722A-36EE-2BBD-44713F8017E1">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:55:02 UTC</createdTime>
+<generatorID>853EBE70-A774-1F91-3BCE-B89E0B9791F6</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tel.cislo" id="A7D5B3D5-EA2D-C7E9-0674-3A3D15A9558C">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:55:02 UTC</createdTime>
+<generatorID>3E7C839B-8B3A-2A0A-8176-14B739DF1309</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="E-mail" id="64CE1C1F-21F7-8372-52C5-DE95FF510806">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:55:02 UTC</createdTime>
+<generatorID>3C48639C-751F-D8B2-F67D-915A7CEF828E</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D093712D-C012-E798-56E3-5DBFB30ADA6C" name="Dodavatel_PK">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:55:02 UTC</createdTime>
+<generatorID>B4B4C5F5-20BF-FE6E-6201-063C4108AF01</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7D1B03B-EB8D-62B7-EB04-3288BDD7242B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

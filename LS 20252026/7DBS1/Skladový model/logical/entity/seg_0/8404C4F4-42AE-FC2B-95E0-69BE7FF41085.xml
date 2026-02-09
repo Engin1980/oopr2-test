@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8404C4F4-42AE-FC2B-95E0-69BE7FF41085" name="Dodavatel">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:47:14 UTC</createdTime>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Dodavatel" id="7CAE8A61-39EE-442D-66F0-54F1EA886A29">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:47:48 UTC</createdTime>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Jmeno" id="FDEDC1C4-E089-36C3-C8BB-161C5639DC9A">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:48:16 UTC</createdTime>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Adresa" id="853EBE70-A774-1F91-3BCE-B89E0B9791F6">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:48:44 UTC</createdTime>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tel.cislo" id="3E7C839B-8B3A-2A0A-8176-14B739DF1309">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:48:57 UTC</createdTime>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="E-mail" id="3C48639C-751F-D8B2-F67D-915A7CEF828E">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:49:11 UTC</createdTime>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B4B4C5F5-20BF-FE6E-6201-063C4108AF01" name="Dodavatel PK">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 13:48:10 UTC</createdTime>
+<ownerDesignName>Skladový model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7CAE8A61-39EE-442D-66F0-54F1EA886A29</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3771DA4B-2347-9AEE-B55D-0E7291F1BC81" name="Produkt">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:02:29 UTC</createdTime>
+<generatorID>C591919E-3368-BCAB-C8E9-E65F7BAA711C</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Produkt" id="E5A31B5F-72BF-43EB-4021-F1C61860BB4D">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:02:29 UTC</createdTime>
+<generatorID>A8FBD71B-7B0B-D457-B165-8560E1C1CFA6</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazev" id="1758C8F0-FC10-1A29-B50A-5EF245FC36A7">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:02:29 UTC</createdTime>
+<generatorID>F5B19276-4C59-E0C3-8407-93545E7C0E74</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_Nakup" id="AA49FB85-3C19-C240-8DFC-F68B4486A518">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:02:29 UTC</createdTime>
+<generatorID>60AFEDCD-71B2-5DAE-3FBC-B4D521F5D921</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cena_Prodej" id="403E7CBB-DDC1-D384-0797-C672FBE2A636">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:02:29 UTC</createdTime>
+<generatorID>40F12344-488A-C3BB-0FBD-3D728F582981</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DPH_Sazba" id="19CEDDEB-4958-9142-6892-A73E3812F3A9">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:02:29 UTC</createdTime>
+<generatorID>80D69864-82EF-13FC-9931-C861A9470D2D</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Popis" id="9DE2075A-1970-CCCA-0436-5C9D4AD9752F">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:02:29 UTC</createdTime>
+<generatorID>1B6E4DBE-E39B-8F59-7887-BA5472B28689</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="94B31234-6B1F-6807-9576-700776D3B5C5" name="Produkt_PK">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:02:29 UTC</createdTime>
+<generatorID>34A96B89-622B-2A38-43C6-87C9A4CE4F82</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5A31B5F-72BF-43EB-4021-F1C61860BB4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

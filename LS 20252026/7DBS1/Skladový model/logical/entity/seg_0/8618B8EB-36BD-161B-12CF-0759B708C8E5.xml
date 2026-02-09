@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8618B8EB-36BD-161B-12CF-0759B708C8E5" name="Prijemka_Zbozi">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:18:45 UTC</createdTime>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Mnozstvi" id="C2087AD2-92EB-BDEE-ED9E-D9FA98FFF135">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:22:07 UTC</createdTime>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cena_Ks" id="E5A875FB-C936-CECD-463A-B5594E180123">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:22:59 UTC</createdTime>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Prijemka" id="3A683659-D3E5-F723-257F-4F445844B7B1">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:26:30 UTC</createdTime>
+<generatorID>E5647B46-D1CD-5C40-5E80-F7C7D7F28E44</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<referedAttribute>CCACD73C-D768-6BFB-BAB6-18E752E59BDE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Sklad" id="124E2A9B-9AF2-48A6-0DEB-C8A6AA415599">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:26:30 UTC</createdTime>
+<generatorID>E5647B46-D1CD-5C40-5E80-F7C7D7F28E44</generatorID>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<referedAttribute>AC242F91-04E5-C15E-3C9B-684B15123585</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D5C7FD93-DC7F-1E12-CD26-4D2B33FB395F" name="Prijemka_Zbozi PK">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:29:38 UTC</createdTime>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

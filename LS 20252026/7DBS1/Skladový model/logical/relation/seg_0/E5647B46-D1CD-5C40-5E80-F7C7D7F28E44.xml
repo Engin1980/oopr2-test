@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_5" directorySegmentName="seg_0" id="E5647B46-D1CD-5C40-5E80-F7C7D7F28E44">
+<createdBy>Kubin</createdBy>
+<createdTime>2026-02-09 14:26:30 UTC</createdTime>
+<ownerDesignName>Skladový model</ownerDesignName>
+<engineerTo>
+<item key="721D6114-4A67-AD41-536D-F9A5222F6A51" value="true"/>
+</engineerTo>
+<sourcePk>C8689C06-D7A8-0A15-7EB9-AAA06178617A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ECA2C910-7623-3F65-377F-B909112D7877</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8618B8EB-36BD-161B-12CF-0759B708C8E5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
