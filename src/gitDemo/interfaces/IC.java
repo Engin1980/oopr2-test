@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface IC extends IWithStudyNumber {
   /**
-   * Probere seznam řidičů a vybere pro každého řidiče pouze ten záznam, který má nejnižší čas. Vrací seznam unikátních
+   * Projde seznam řidičů a vybere pro každého řidiče pouze ten záznam, který má nejnižší čas. Vrací seznam unikátních
    * řidičů s jejich nejlepším časem.
    * @param driverTimes
    * @return Seznam instancí DriverTime, kde každý řidič se vyskytuje pouze jednou a je zde uveden jeho nejlepší čas.
