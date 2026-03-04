@@ -8,7 +8,7 @@ import java.util.List;
 
 public class TeacherB implements IB {
   @Override
-  public int getStudyNumber() {
+  public String getStudyNumber() {
     return "Teacher-B";
   }
 

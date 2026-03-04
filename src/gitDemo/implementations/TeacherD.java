@@ -8,7 +8,7 @@ import java.util.List;
 
 public class TeacherD implements ID {
   @Override
-  public int getStudyNumber() {
+  public String getStudyNumber() {
     return "Teacher-D";
   }
 

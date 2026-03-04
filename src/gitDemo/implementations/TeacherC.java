@@ -2,6 +2,7 @@ package gitDemo.implementations;
 
 import gitDemo.interfaces.IC;
 import gitDemo.types.DriverTime;
+import gitDemo.types.StringDriverTimeTuple;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ public class TeacherC implements IC {
   }
 
   @Override
-  public int getStudyNumber() {
+  public String getStudyNumber() {
     return "Teacher-C";
   }
 }

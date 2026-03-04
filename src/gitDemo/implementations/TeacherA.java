@@ -12,7 +12,7 @@ public class TeacherA implements IA {
   }
 
   @Override
-  public int getStudyNumber() {
+  public String getStudyNumber() {
     return "Teacher-A";
   }
 }
