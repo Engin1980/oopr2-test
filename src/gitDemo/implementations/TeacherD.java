@@ -1,5 +1,6 @@
 package gitDemo.implementations;
 
+import gitDemo.Contracts;
 import gitDemo.interfaces.ID;
 import gitDemo.types.DriverTime;
 import gitDemo.types.Result;
@@ -14,6 +15,22 @@ public class TeacherD implements ID {
 
   @Override
   public Result evaluateResult(List<DriverTime> driverTimes) {
-    throw new UnsupportedOperationException("Not supported yet.");
+    Contracts.Argument.isNotNull(driverTimes, "driverTimes");
+    Contracts.Argument.isTrue(driverTimes.size() >= 3, "driverTimes", "DriverTimes must contain at least three records");
+
+    Result ret;
+
+    List<DriverTime> sorted = driverTimes.stream()
+        .sorted()
+        .toList();
+
+      DriverTime first = sorted.get(0);
+      DriverTime second = sorted.get(1);
+      DriverTime third = sorted.get(2);
+      double averageTime = driverTimes.stream().mapToInt(DriverTime::getTimeInMs).average().orElseThrow();
+
+      ret = new Result(first, second, third, (int) averageTime);
+
+    return ret;
   }
 }
