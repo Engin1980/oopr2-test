@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class r24243  implements IC {
+public class R24243 implements IC {
     @Override
     public List<DriverTime> filterRecordsByDriver(List<DriverTime> driverTimes) {
         List<DriverTime> sortedTimes = new ArrayList<>(driverTimes);
