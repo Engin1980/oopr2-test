@@ -24,12 +24,12 @@ public class TeacherD implements ID {
         .sorted()
         .toList();
 
-      DriverTime first = sorted.get(0);
-      DriverTime second = sorted.get(1);
-      DriverTime third = sorted.get(2);
-      double averageTime = driverTimes.stream().mapToInt(DriverTime::getTimeInMs).average().orElseThrow();
+    DriverTime first = sorted.get(0);
+    DriverTime second = sorted.get(1);
+    DriverTime third = sorted.get(2);
+    double averageTime = driverTimes.stream().mapToInt(DriverTime::getTimeInMs).average().orElseThrow();
 
-      ret = new Result(first, second, third, (int) averageTime);
+    ret = new Result(first, second, third, driverTimes.size(), (int) averageTime);
 
     return ret;
   }
