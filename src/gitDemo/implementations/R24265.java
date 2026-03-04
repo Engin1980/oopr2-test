@@ -17,7 +17,6 @@ public class R24265 implements IC {
 
         for (DriverTime driverTime : driverTimes) {
             String name = driverTime.getName();
-
             if (!bestTimes.containsKey(name) || driverTime.getTimeInMs() < bestTimes.get(name).getTimeInMs()) {
                 bestTimes.put(name, driverTime);
             }
