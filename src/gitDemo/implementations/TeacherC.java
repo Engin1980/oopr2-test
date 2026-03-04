@@ -12,7 +12,7 @@ public class TeacherC implements IC {
   }
 
   @Override
-  public String getStudyNumber() {
+  public int getStudyNumber() {
     return "Teacher-C";
   }
 }
