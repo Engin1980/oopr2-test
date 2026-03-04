@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Skladový model" id="97D67921-3EC4-0828-B99E-D239592D3577" version="3.5">
-<createdBy>Kubin</createdBy>
-<createdTime>2026-02-09 13:27:15 UTC</createdTime>
-<ownerDesignName>Skladový model</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>97D67921-3EC4-0828-B99E-D239592D3577</designId>
-</OSDM_Design>

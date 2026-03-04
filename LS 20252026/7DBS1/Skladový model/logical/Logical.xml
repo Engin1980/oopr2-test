@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="8858EF97-C522-A3E9-5275-8E83F92ACEDD" mainViewID="CCCDDF4F-7753-8125-6713-2484CD6FFA0F">
-<createdBy>Kubin</createdBy>
-<createdTime>2026-02-09 13:27:15 UTC</createdTime>
-<ownerDesignName>Skladový model</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>
