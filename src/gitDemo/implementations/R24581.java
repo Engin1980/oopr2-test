@@ -34,7 +34,7 @@ public class R24581 implements IB {
         System.out.println("================================\n");
 
         // 4. Spuštění celkového hodnocení
-        Evaluator.evaluate();
+        Evaluator.evaluate(true);
     }
 
     @Override

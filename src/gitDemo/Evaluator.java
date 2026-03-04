@@ -13,7 +13,7 @@ import java.net.URL;
 import java.util.*;
 
 public class Evaluator {
-  private static <T> List<T> getAllImplementationsOfInterface(Class<T> interfaceClass) {
+  private static <T> List<T> getAllImplementationsOfInterface(Class<T> interfaceClass, boolean includeTeachers) {
     List<T> ret = new ArrayList<>();
 
     try {
@@ -39,6 +39,8 @@ public class Evaluator {
               String className = fileName.substring(0, fileName.length() - 6);
               String fullClassName = packageName + '.' + className;
 
+              if (!includeTeachers && className.contains("Teacher")) continue;
+
               try {
                 Class<?> cls = Class.forName(fullClassName);
                 // Zkontrolovat, zda třída implementuje dané rozhraní
@@ -61,11 +63,11 @@ public class Evaluator {
     return ret;
   }
 
-  public static void evaluate() {
-    List<IA> iAs = getAllImplementationsOfInterface(IA.class);
-    List<IB> iBs = getAllImplementationsOfInterface(IB.class);
-    List<IC> iCs = getAllImplementationsOfInterface(IC.class);
-    List<ID> iDs = getAllImplementationsOfInterface(ID.class);
+  public static void evaluate(boolean includeTeachers) {
+    List<IA> iAs = getAllImplementationsOfInterface(IA.class, includeTeachers);
+    List<IB> iBs = getAllImplementationsOfInterface(IB.class, includeTeachers);
+    List<IC> iCs = getAllImplementationsOfInterface(IC.class, includeTeachers);
+    List<ID> iDs = getAllImplementationsOfInterface(ID.class, includeTeachers);
 
     List<SequenceIn> sequenceIns = getAllCombinations(iAs, iBs, iCs, iDs);
     DataSet dataSet = provideDataSetA();
