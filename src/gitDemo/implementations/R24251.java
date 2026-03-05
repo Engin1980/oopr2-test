@@ -51,7 +51,7 @@ public class R24251 implements ID {
             third = myList.get(2);
         }
 
-        return new Result(first, second, third, numberOfDrivers, (int)averageTime);
+        return new Result(first, second, third, numberOfDrivers, (int) Math.round(averageTime));
     }
 
     public String getStudyNumber() {
