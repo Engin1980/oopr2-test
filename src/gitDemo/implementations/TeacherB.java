@@ -21,6 +21,7 @@ public class TeacherB implements IB {
     List<DriverTime> ret = new ArrayList<>();
 
     for (StringDriverTimeTuple record : records) {
+      if (record == null || record.driverName() == null || record.driverName().isEmpty() || record.time() == null) continue;
       String driverName = record.driverName();
       String timeString = record.time().replace(',', '.');
 
