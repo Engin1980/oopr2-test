@@ -14,6 +14,32 @@ public class IBTest {
   }
 
   @Test
+  void convertMultiple() {
+    StringDriverTimeTuple sdttA = new StringDriverTimeTuple("Lewis Hamilton", "1:30,456");
+    StringDriverTimeTuple sdttB = new StringDriverTimeTuple("John Doe", "1:31,456");
+    List<StringDriverTimeTuple> ins = List.of(sdttA, sdttB, sdttA);
+    IB ib = provideIb();
+
+    List<DriverTime> outs = ib.convert(ins);
+
+    Assertions.assertNotNull(outs);
+    Assertions.assertEquals(3, outs.size());
+    DriverTime dt = outs.getFirst();
+    Assertions.assertEquals("Lewis Hamilton", dt.getName());
+    Assertions.assertEquals(90456, dt.getTimeInMs());
+
+    dt = outs.get(1);
+    Assertions.assertEquals("John Doe", dt.getName());
+    Assertions.assertEquals(91456, dt.getTimeInMs());
+
+
+    dt = outs.get(2);
+    Assertions.assertEquals("Lewis Hamilton", dt.getName());
+    Assertions.assertEquals(90456, dt.getTimeInMs());
+
+  }
+
+  @Test
   void convertSimpleComma() {
     StringDriverTimeTuple sdtt = new StringDriverTimeTuple("Lewis Hamilton", "1:30,456");
     List<StringDriverTimeTuple> ins = List.of(sdtt);

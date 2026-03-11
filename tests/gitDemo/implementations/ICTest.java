@@ -14,6 +14,24 @@ public class ICTest {
   }
 
   @Test
+  void arrangeEmpty() {
+    IC ic = provideIc();
+
+    List<DriverTime> data = List.of();
+    List<DriverTime> actual = ic.filterRecordsByDriver(data);
+
+    Assertions.assertNotNull(actual);
+    Assertions.assertTrue(actual.isEmpty());
+  }
+
+  @Test
+  void arrangeNull(){
+    IC ic = provideIc();
+
+    Assertions.assertThrows(IllegalArgumentException.class, () -> ic.filterRecordsByDriver(null));
+  }
+
+  @Test
   void arrangeSimple() {
     IC ic = provideIc();
 
