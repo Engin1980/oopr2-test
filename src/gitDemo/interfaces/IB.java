@@ -12,8 +12,7 @@ public interface IB extends IWithStudyNumber {
    * @param records Seznam položek s dvojičkami řidič-čas, které mají být převedeny.
    * @return Seznam instancí DriverTime, které byly úspěšně převedeny z původních záznamů. Položky s neplatným časem budou vynechány.
    * @throws IllegalArgumentException Pokud vstupní seznam je null.
-   * Předpokládá se, že čas je ve formátu 'm:ss.SSS' nebo 'm:ss,SSS', kde část SSS může být zkrácená, pokud končí nulami.
-   * Může být desetinná tečka i čárka.
+   * Předpokládá se, že čas je ve formátu 'm:ss.SSS' nebo 'm:ss,SSS'. Může být desetinná tečka i čárka.
    */
   List<DriverTime> convert(List<StringDriverTimeTuple> records);
 }
