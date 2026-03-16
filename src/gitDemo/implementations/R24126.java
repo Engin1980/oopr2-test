@@ -11,6 +11,9 @@ public class R24126 implements ID {
 
     @Override
     public Result evaluateResult(List<DriverTime> driverTimes) {
+        if (driverTimes == null) {
+            throw new IllegalArgumentException("Driver times list cannot be null.");
+        }
         if (driverTimes.size() < 3) {
             throw new IllegalArgumentException("At least 3 driver times are required.");
         }
