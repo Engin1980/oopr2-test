@@ -12,7 +12,9 @@ public class R24265 implements IC {
 
     @Override
     public List<DriverTime> filterRecordsByDriver(List<DriverTime> driverTimes) {
-
+        if (driverTimes == null) {
+            throw new IllegalArgumentException("Vstupní seznam nesmí být null!");
+        }
         Map<String, DriverTime> bestTimes = new HashMap<>();
 
         for (DriverTime driverTime : driverTimes) {
