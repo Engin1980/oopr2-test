@@ -24,13 +24,16 @@ public class R24261 implements IA {
 
         for (String record : records) {
             String trimmedRecord = record.trim();
-            if (trimmedRecord.isEmpty()) continue;
 
-            String[] parts = trimmedRecord.split(",", 2);
+            if (trimmedRecord.isEmpty()) {
+                continue;
+            }
 
-            if (parts.length == 2) {
-                String name = parts[0].trim();
-                String time = parts[1].trim();
+            int lastSpaceIndex = trimmedRecord.lastIndexOf(' ');
+
+            if (lastSpaceIndex != -1) {
+                String name = trimmedRecord.substring(0, lastSpaceIndex).trim();
+                String time = trimmedRecord.substring(lastSpaceIndex + 1).trim();
 
                 if (!name.isEmpty() && !time.isEmpty()) {
                     result.add(new StringDriverTimeTuple(name, time));
