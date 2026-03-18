@@ -9,8 +9,13 @@ import gitDemo.types.DriverTime;
 
 public class R25074 implements IC {
 
+
     @Override
     public List<DriverTime> filterRecordsByDriver(List<DriverTime> driverTimes) {
+
+        if (driverTimes == null) {
+            throw new IllegalArgumentException("driverTimes cannot be null");
+        }
 
         Map<String, DriverTime> bestTimes = new HashMap<>();
 
